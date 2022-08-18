@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(32, 32, 32);
+    
+}
+header {
+    background-color: rgb(27, 27, 27);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px
+
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+
+
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+
+
+}
+ul li{
+    margin-inline: 2vh;
+    border-right: 1px solid aliceblue;
+    padding-right: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+
+}
+#therock, img{
+    background-size: cover;
+    height: 100px;
+    width: 90px;
+    border-radius: 30%;
+    border: 1px solid aliceblue;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#aside {
+    background-color: aqua;
+    grid-area: aside;
+    border: 1px solid aliceblue;
+}
+
+.section1 {
+    background-color: cadetblue;
+    grid-area: section1;
+    border: 1px solid aliceblue;
+}
+.section2 {
+    background-color: crimson;
+    grid-area: section2;
+    border: 1px solid aliceblue;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "aside section1 section1"
+    "aside section2 section2"
+    "produtos produtos produtos"
+    "footer footer footer";
+    gap: 5px;
+    width: 100%;
+
+}
+#produtos{
+    grid-area: produtos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.produto{
+    height: 80px;
+    width: 80px;
+    border: 5px solid rgb(158, 95, 22);
+    padding: 5%;
+    background-image: url(img/glass.jpg);
+    background-size: cover;
+    margin: 10vh;
+}
+
+footer{
+    background-color: violet;
+    grid-area: footer;
+    border: 1px solid aliceblue;
+
+}
